@@ -27,7 +27,7 @@ public class TestMod{
 
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModItems.ITEMS.register(eventBus);g
+        ModItems.ITEMS.register(eventBus);
         ModBlocks.BLOCKS.register(eventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
