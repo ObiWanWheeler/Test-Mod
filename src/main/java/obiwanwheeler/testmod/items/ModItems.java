@@ -8,7 +8,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import obiwanwheeler.testmod.TestMod;
 import obiwanwheeler.testmod.blocks.ModBlocks;
-import obiwanwheeler.testmod.util.RegistryHandler;
 
 public class ModItems {
 

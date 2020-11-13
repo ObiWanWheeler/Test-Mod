@@ -10,7 +10,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import obiwanwheeler.testmod.blocks.ModBlocks;
 import obiwanwheeler.testmod.items.ModItems;
-import obiwanwheeler.testmod.util.RegistryHandler;
+import obiwanwheeler.testmod.world.gen.OreGeneration;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -33,7 +33,9 @@ public class TestMod{
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void setup(final FMLCommonSetupEvent event) { }
+    private void setup(final FMLCommonSetupEvent event) {
+        OreGeneration.setupOreGeneration();
+    }
 
     private void doClientStuff(final FMLClientSetupEvent event) { }
 

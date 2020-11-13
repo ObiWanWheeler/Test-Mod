@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xdx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "testmod:matsuri"
+    },
+    "d":{
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "result":
+  {
+    "item": "testmod:matsuri_block",
+    "count": 1
+  }
+}
