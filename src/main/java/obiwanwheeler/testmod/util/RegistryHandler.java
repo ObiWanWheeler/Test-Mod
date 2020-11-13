@@ -28,16 +28,4 @@ public class RegistryHandler {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
-
-    //Items
-    public static final RegistryObject<Item> MATSURI = ITEMS.register("matsuri", () -> new Item(new Item.Properties().maxStackSize(64).
-            group(TestMod.TAB).rarity(Rarity.EPIC)));
-    //Blocks
-    public static final RegistryObject<Block> TESTBLOCK_BLOCK = RegistryHandler.BLOCKS.register("test_block", () -> new Block(AbstractBlock.Properties.create(Material.ROCK, MaterialColor.BLUE).
-            setRequiresTool().hardnessAndResistance(1.5f,6.0f).sound(SoundType.STONE)
-            .harvestLevel(3).harvestTool(ToolType.PICKAXE)));
-    //Block Items
-    public static final RegistryObject<Item> TESTBLOCK_BLOCK_ITEM = RegistryHandler.ITEMS.register("test_block",
-            () -> new BlockItem(TESTBLOCK_BLOCK.get(), new Item.Properties().maxStackSize(64).group(TestMod.TAB)));
-
 }
