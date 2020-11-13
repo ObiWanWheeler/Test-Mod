@@ -1,4 +1,5 @@
 {
-  "item.testmod.matsuri": "matsuri",
-  "itemGroup.testModTab": "Test Mod"
+  "item.testmod.matsuri": "Apex Predator",
+  "itemGroup.testModTab": "Test Mod",
+  "block.testmod.matsuri_block": "Very Dangerous Block"
 }

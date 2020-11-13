@@ -1,14 +1,21 @@
 package obiwanwheeler.testmod.util;
 
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Rarity;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import obiwanwheeler.testmod.TestMod;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import obiwanwheeler.testmod.blocks.TestBlock;
-import obiwanwheeler.testmod.items.ItemBase;
+import obiwanwheeler.testmod.blocks.ModBlocks;
 
 
 public class RegistryHandler {
@@ -23,11 +30,14 @@ public class RegistryHandler {
     }
 
     //Items
-    public static final RegistryObject<Item> MATSURI = ITEMS.register("matsuri", ItemBase::new);
-
+    public static final RegistryObject<Item> MATSURI = ITEMS.register("matsuri", () -> new Item(new Item.Properties().maxStackSize(64).
+            group(TestMod.TAB).rarity(Rarity.EPIC)));
     //Blocks
-    public static final RegistryObject<Block> TESTBLOCK_BLOCK = BLOCKS.register("test_block", TestBlock::new);
-
+    public static final RegistryObject<Block> TESTBLOCK_BLOCK = RegistryHandler.BLOCKS.register("test_block", () -> new Block(AbstractBlock.Properties.create(Material.ROCK, MaterialColor.BLUE).
+            setRequiresTool().hardnessAndResistance(1.5f,6.0f).sound(SoundType.STONE)
+            .harvestLevel(3).harvestTool(ToolType.PICKAXE)));
     //Block Items
-    public static final
+    public static final RegistryObject<Item> TESTBLOCK_BLOCK_ITEM = RegistryHandler.ITEMS.register("test_block",
+            () -> new BlockItem(TESTBLOCK_BLOCK.get(), new Item.Properties().maxStackSize(64).group(TestMod.TAB)));
+
 }

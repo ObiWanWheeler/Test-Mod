@@ -7,6 +7,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import obiwanwheeler.testmod.items.ModItems;
 import obiwanwheeler.testmod.util.RegistryHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -34,7 +35,7 @@ public class TestMod{
     public static final ItemGroup TAB = new ItemGroup("testModTab"){
         @Override
         public ItemStack createIcon(){
-            return new ItemStack(RegistryHandler.MATSURI.get());
+            return new ItemStack(ModItems.MATSURI.get());
         }
     };
 }
