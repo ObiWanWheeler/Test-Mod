@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[35,)"
+license="MIT"
+showAsResourcePack=false
+
+[[mods]]
+    modId="testmod"
+    version="${file.jarVersion}"
+    displayName="Test Mod"
+    credits="Scatman John"
+    authors="ObiWanWheeler"
+    description='''
+    It does literally nothing!
+    '''
+
+[[dependencies.testmod]]
+    modId="forge"
+    mandatory=true
+    versionRange="[35,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.testmod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.4]"
+    ordering="NONE"
+    side="BOTH"
