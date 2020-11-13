@@ -20,12 +20,4 @@ import obiwanwheeler.testmod.blocks.ModBlocks;
 
 public class RegistryHandler {
 
-    //this is like a list of items
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TestMod.MODID);
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, TestMod.MODID);
-
-    public static void init(){
-        ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-        BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
-    }
 }

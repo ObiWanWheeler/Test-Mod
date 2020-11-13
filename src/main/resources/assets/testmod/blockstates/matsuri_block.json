@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model":  "testmod/blockstates/block/matsuri_block" }
+    "": { "model":  "testmod:block/matsuri_block" }
   }
 }

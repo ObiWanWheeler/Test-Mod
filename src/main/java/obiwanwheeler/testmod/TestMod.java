@@ -3,10 +3,12 @@ package obiwanwheeler.testmod;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import obiwanwheeler.testmod.blocks.ModBlocks;
 import obiwanwheeler.testmod.items.ModItems;
 import obiwanwheeler.testmod.util.RegistryHandler;
 import org.apache.logging.log4j.LogManager;
@@ -23,7 +25,10 @@ public class TestMod{
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this :: setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this :: doClientStuff);
 
-        RegistryHandler.init();
+        IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.ITEMS.register(eventBus);
+        ModBlocks.BLOCKS.register(eventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
