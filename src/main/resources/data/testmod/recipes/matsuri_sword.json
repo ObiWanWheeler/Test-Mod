@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " m ",
+    " m ",
+    " d "
+  ],
+  "key":
+  {
+    "m":
+    {
+      "item": "testmod:matsuri"
+    },
+    "d":{
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "result":
+  {
+    "item": "testmod:matsuri_sword",
+    "count": 1
+  }
+}
