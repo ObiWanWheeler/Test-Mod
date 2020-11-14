@@ -1,5 +1,10 @@
 {
   "item.testmod.matsuri": "Apex Predator",
   "itemGroup.testModTab": "Test Mod",
-  "block.testmod.matsuri_block": "Very Dangerous Block"
+  "block.testmod.matsuri_block": "Very Dangerous Block",
+  "item.testmod.matsuri_sword": "Loli Capturer",
+  "item.testmod.matsuri_picakxe": "Loli Harvester",
+  "item.testmod.matsuri_shovel": "Loli Excavator",
+  "item.testmod.matsuri_axe": "KataiMono",
+  "item.testmod.matsuri_hoe": "Sam Jackson"
 }
