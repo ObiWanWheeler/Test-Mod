@@ -1,5 +1,6 @@
 package obiwanwheeler.testmod.items;
 
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
@@ -7,6 +8,7 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import obiwanwheeler.testmod.TestMod;
+import obiwanwheeler.testmod.armor.ModArmorMaterial;
 import obiwanwheeler.testmod.blocks.ModBlocks;
 import obiwanwheeler.testmod.tools.ModItemTier;
 
@@ -46,4 +48,13 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.MATSURIBLOCK_BLOCK.get(), new Item.Properties().group(TestMod.TAB).maxStackSize(64)));
     public static final RegistryObject<Item> POOBLOCK_BLOCK_ITEM = ITEMS.register("poo_block",
             () -> new BlockItem(ModBlocks.POOBLOCK_BLOCK.get(), new Item.Properties().group(TestMod.TAB).maxStackSize(64)));
+    //Armor
+    public static final RegistryObject<ArmorItem> MATSURI_HELMET = ITEMS.register("matsuri_helmet",
+            () -> new ArmorItem(ModArmorMaterial.MATSURI, EquipmentSlotType.HEAD, new Item.Properties().group(TestMod.TAB).rarity(Rarity.EPIC)));
+    public static final RegistryObject<ArmorItem> MATSURI_CHESTPLATE = ITEMS.register("matsuri_chestplate",
+            () -> new ArmorItem(ModArmorMaterial.MATSURI, EquipmentSlotType.CHEST, new Item.Properties().group(TestMod.TAB).rarity(Rarity.EPIC)));
+    public static final RegistryObject<ArmorItem> MATSURI_LEGGINGS = ITEMS.register("matsuri_leggings",
+            () -> new ArmorItem(ModArmorMaterial.MATSURI, EquipmentSlotType.LEGS, new Item.Properties().group(TestMod.TAB).rarity(Rarity.EPIC)));
+    public static final RegistryObject<ArmorItem> MATSURI_BOOTS = ITEMS.register("matsuri_boots",
+            () -> new ArmorItem(ModArmorMaterial.MATSURI, EquipmentSlotType.FEET, new Item.Properties().group(TestMod.TAB).rarity(Rarity.EPIC)));
 }

@@ -8,5 +8,9 @@
   "item.testmod.matsuri_axe": "KataiMono",
   "item.testmod.matsuri_hoe": "Sam Jackson",
   "block.testmod.poo_block": "Poop",
-  "item.testmod.poison_apple": "Poison Apple"
+  "item.testmod.poison_apple": "Poison Apple",
+  "item.testmod.matsuri_helmet": "Matsuri's helmet",
+  "item.testmod.matsuri_chestplate": "Bandaids",
+  "item.testmod.matsuri_leggings": "Matsuri's OPantsu",
+  "item.testmod.matsuri_boots": "Matsuri's slippers"
 }
