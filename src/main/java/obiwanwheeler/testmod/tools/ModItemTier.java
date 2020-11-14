@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 
 public enum ModItemTier implements IItemTier {
 
-    MATSURI(3, 5000, 10f, 3.0f, 25, () -> { return Ingredient.fromItems(ModItems.MATUSRI_SWORD.get());});
+    MATSURI(3, 5000, 10f, 3.0f, 25, () -> { return Ingredient.fromItems(ModItems.MATSURI.get());});
 
     private final int harvestLevel;
     private final int maxUses;

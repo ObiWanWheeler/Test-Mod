@@ -25,7 +25,8 @@ public class OreGeneration {
     private static final ArrayList<ConfiguredFeature<?,?>> ORES = new ArrayList<>();
 
     public static void setupOreGeneration(){
-        addOre(ModBlocks.MATSURIBLOCK_BLOCK.get(), 8, 128, 5000);
+        addOre(ModBlocks.MATSURIBLOCK_BLOCK.get(), 8, 128, 1000);
+        addOre(ModBlocks.POOBLOCK_BLOCK.get(), 20, 128, 1000);
     }
 
     @SubscribeEvent(priority = EventPriority.HIGHEST)
