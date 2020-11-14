@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern":
   [
-    "mmm",
+    " m ",
     " d ",
     " d "
   ],
@@ -18,7 +18,7 @@
   },
   "result":
   {
-    "item": "testmod:matsuri_pickaxe",
+    "item": "testmod:matsuri_sword",
     "count": 1
   }
 }

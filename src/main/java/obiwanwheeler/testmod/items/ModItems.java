@@ -19,32 +19,28 @@ public class ModItems {
             group(TestMod.TAB).rarity(Rarity.EPIC)));
     //Tools
     public static final RegistryObject<SwordItem> MATSURI_SWORD = ITEMS.register("matsuri_sword",
-            () -> new SwordItem(ModItemTier.MATSURI, 8, 0.0f,
-                    new Item.Properties().group(ItemGroup.COMBAT).isImmuneToFire().rarity(Rarity.EPIC)));
+            () -> new SwordItem(ModItemTier.MATSURI, 20, 0.0f,
+                    new Item.Properties().group(TestMod.TAB).isImmuneToFire().rarity(Rarity.EPIC)));
     public static final RegistryObject<PickaxeItem> MATSURI_PICKAXE = ITEMS.register("matsuri_pickaxe",
             () -> new PickaxeItem(ModItemTier.MATSURI, 4, 0.0f,
-                    new Item.Properties().group(ItemGroup.TOOLS)));
+                    new Item.Properties().group(TestMod.TAB)));
     public static final RegistryObject<ShovelItem> MATSURI_SHOVEL = ITEMS.register("matsuri_shovel",
             () -> new ShovelItem(ModItemTier.MATSURI, 4, 0.0f,
-                    new Item.Properties().group(ItemGroup.TOOLS)));
+                    new Item.Properties().group(TestMod.TAB)));
     public static final RegistryObject<AxeItem> MATSURI_AXE = ITEMS.register("matsuri_axe",
             () -> new AxeItem(ModItemTier.MATSURI, 6, 0.0f,
-                    new Item.Properties().group(ItemGroup.TOOLS)));
+                    new Item.Properties().group(TestMod.TAB)));
     public static final RegistryObject<HoeItem> MATSURI_HOE = ITEMS.register("matsuri_hoe",
             () -> new HoeItem(ModItemTier.MATSURI, 10, 0.0f,
-                    new Item.Properties().group(ItemGroup.TOOLS)));
+                    new Item.Properties().group(TestMod.TAB)));
     //Foods
     public static final RegistryObject<Item> POISON_APPLE = ITEMS.register("poison_apple",
-            () -> new Item(new Item.Properties().group(ItemGroup.FOOD).
+            () -> new Item(new Item.Properties().group(TestMod.TAB).
                     food(new Food.Builder().hunger(10).saturation(2.5f)
                             .effect(() -> new EffectInstance(Effects.POISON, 200, 2), 1.0f)
                             .effect(() -> new EffectInstance(Effects.NAUSEA, 300, 1), 1.0f)
                             .effect(() -> new EffectInstance(Effects.HUNGER, 300, 1), 1.0f)
                             .setAlwaysEdible().build())));
-    public static final RegistryObject<Item> POO_FOOD = ITEMS.register("poo_apple",
-            () -> new Item(new Item.Properties().group(TestMod.TAB)
-                    .food(new Food.Builder().hunger(-4).saturation(0)
-                            .effect(() -> new EffectInstance(Effects.WITHER, 2000, 3), 1.0f).build())));
     //BlockItems
     public static final RegistryObject<Item> MATSURIBLOCK_BLOCK_ITEM = ITEMS.register("matsuri_block",
             () -> new BlockItem(ModBlocks.MATSURIBLOCK_BLOCK.get(), new Item.Properties().group(TestMod.TAB).maxStackSize(64)));
